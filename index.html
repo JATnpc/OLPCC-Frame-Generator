@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Generator</title>
+    <link rel="icon" type="image/png" href="olpcc.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="event-banner">
+                <div class="banner-glow"></div>
+                <div class="statue-overlay"></div>
+                <div class="laurel-left"></div>
+                <div class="laurel-right"></div>
+                <h1 class="title">PILLARICAN SPORTS FEST 2025</h1>
+                <div class="banner-subtitle">OFFICIAL FRAME GENERATOR</div>
+            </div>
+            <div class="festival-info">
+                <p class="subtitle">Sports • Culture • Literary Festival</p>
+                <p class="event-text">Upload your photo and create your own Pillarican champion frame. Stand out at this year's festival with a personalized keepsake that captures your spirit.</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="upload-container">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-content">
+                            <div class="upload-icon">📸</div>
+                            <h3>UPLOAD YOUR PHOTO</h3>
+                            <p>Click or drag your image here</p>
+                        </div>
+                        <input type="file" id="imageInput" accept="image/*" class="file-input" title="Select an image file to upload" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preview Section -->
+            <section class="preview-section hidden" id="previewSection">
+                <div class="controls-canvas-row align-horizontal">
+                    <div class="canvas-col">
+                        <!-- Frame selector removed, only default frame.png will be used -->
+                        <div class="canvas-frame-row">
+                            <div class="canvas-container large-canvas">
+                                <canvas id="previewCanvas" width="420" height="420"></canvas>
+                            </div>
+                            <div class="controls-col align-controls-side">
+                                <div class="controls-grid vertical">
+                                    <!-- Scale Control -->
+                                    <div class="control-group">
+                                        <label for="scaleSlider">Scale</label>
+                                        <div class="slider-container">
+                                            <input type="range" id="scaleSlider" min="0.1" max="2" step="0.1" value="1" class="slider">
+                                            <span class="slider-value" id="scaleValue">1.0</span>
+                                        </div>
+                                    </div>
+                                    <!-- Position X Control -->
+                                    <div class="control-group">
+                                        <label for="positionXSlider">Position X</label>
+                                        <div class="slider-container">
+                                            <input type="range" id="positionXSlider" min="-200" max="200" step="5" value="0" class="slider">
+                                            <span class="slider-value" id="positionXValue">0</span>
+                                        </div>
+                                    </div>
+                                    <!-- Position Y Control -->
+                                    <div class="control-group">
+                                        <label for="positionYSlider">Position Y</label>
+                                        <div class="slider-container">
+                                            <input type="range" id="positionYSlider" min="-200" max="200" step="5" value="0" class="slider">
+                                            <span class="slider-value" id="positionYValue">0</span>
+                                        </div>
+                                    </div>
+                                    <!-- Reset Button -->
+                                    <button class="btn btn-secondary" id="resetBtn">Reset Position</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Download Button -->
+                        <button class="btn btn-primary" id="downloadBtn">
+                            <span class="btn-icon">⬇</span>
+                            Download Framed Photo
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instructions -->
+            <section class="instructions" id="instructions">
+                <div class="instructions-header">
+                    <h3>HOW TO CREATE YOUR FRAME</h3>
+                </div>
+                <div class="instruction-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Upload Your Photo</h4>
+                            <p>Select your best photo to showcase your Pillarican pride and spirit.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Adjust & Position</h4>
+                            <p>Use the controls to scale and position your photo perfectly within the frame.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Download & Share</h4>
+                            <p>Save your framed photo and share it with friends and family!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-main">
+          <span class="footer-project">PILLARICAN SPORTS FEST 2025</span>
+        </div>
+        <div class="footer-event">
+          <span class="event-dates">DEVELOPED BY: JEREMI A. TAMAYO</span>
+          <span class="event-location">OUR LADY OF THE PILLAR COLLEGE - CAUAYAN</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Loading Indicator -->
+    <div class="loading hidden" id="loading">
+        <div class="loading-spinner"></div>
+        <p>Processing your image...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
