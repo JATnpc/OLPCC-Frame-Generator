@@ -1,6 +1,10 @@
-/* ===========================
-   CSS RESET & BASE STYLES
-   =========================== */
+/*
+====================================
+  CSS RESET & BASE STYLES
+  - Standardizes default browser styles
+  - Sets up base font and layout
+====================================
+*/
 
 * {
     margin: 0;
@@ -34,9 +38,12 @@ body {
     z-index: 1;
 }
 
-/* ===========================
-   UTILITY CLASSES
-   =========================== */
+/*
+====================================
+  UTILITY CLASSES
+  - Helper classes for visibility and layout
+====================================
+*/
 
 .hidden {
     display: none !important;
@@ -52,9 +59,12 @@ body {
     position: relative;
 }
 
-/* ===========================
-   HEADER STYLES
-   =========================== */
+/*
+====================================
+  HEADER STYLES
+  - Event branding, banner, and title design
+====================================
+*/
 
 .header {
     text-align: center;
@@ -257,9 +267,12 @@ body {
         inset 0 2px 10px rgba(218, 165, 32, 0.05);
 }
 
-/* ===========================
-   MAIN CONTENT
-   =========================== */
+/*
+====================================
+  MAIN CONTENT
+  - Main layout and content area
+====================================
+*/
 
 .main-content {
     flex: 1;
@@ -270,9 +283,12 @@ body {
     min-height: calc(100vh - 300px);
 }
 
-/* ===========================
-   UPLOAD SECTION
-   =========================== */
+/*
+====================================
+  UPLOAD SECTION
+  - Upload area, Greek frame, and drag-and-drop styling
+====================================
+*/
 
 .upload-container {
     position: relative;
@@ -315,9 +331,12 @@ body {
         0 4px 20px rgba(251, 191, 36, 0.2);
 }
 
-/* ===========================
-   UPLOAD SECTION STYLES
-   =========================== */
+/*
+====================================
+  UPLOAD SECTION STYLES
+  - Upload area, drag-over, and file input enhancements
+====================================
+*/
 
 .upload-section {
     margin-bottom: 60px;
@@ -543,9 +562,12 @@ body {
     z-index: 20;
 }
 
-/* ===========================
-   CONTROL PANEL
-   =========================== */
+/*
+====================================
+  CONTROL PANEL
+  - Controls for frame generator adjustments
+====================================
+*/
 
 .control-panel {
     background: rgba(255, 255, 255, 0.98);
@@ -660,9 +682,12 @@ body {
     font-size: 0.9rem;
 }
 
-/* ===========================
-   BUTTONS
-   =========================== */
+/*
+====================================
+  BUTTONS
+  - Primary and secondary button styles
+====================================
+*/
 
 .btn {
     display: inline-flex;
@@ -734,9 +759,12 @@ body {
     margin-top: 20px;
 }
 
-/* ===========================
-   PREVIEW SECTION
-   =========================== */
+/*
+====================================
+  PREVIEW SECTION
+  - Canvas preview and layout
+====================================
+*/
 
 .preview-section {
     display: block;
@@ -798,9 +826,12 @@ body {
     background: white;
 }
 
-/* ===========================
-   INSTRUCTIONS SECTION
-   =========================== */
+/*
+====================================
+  INSTRUCTIONS SECTION
+  - Step-by-step user instructions
+====================================
+*/
 
 .instructions {
     background: rgba(255, 255, 255, 0.98);
@@ -903,9 +934,12 @@ body {
     font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+/*
+====================================
+  FOOTER
+  - Footer branding and event info
+====================================
+*/
 
 .footer {
     width: 100%;
@@ -1027,9 +1061,12 @@ body {
   }
 }
 
-/* ===========================
-   PREVIEW SECTION VISIBILITY
-   =========================== */
+/*
+====================================
+  PREVIEW SECTION VISIBILITY
+  - Utility classes for toggling preview visibility
+====================================
+*/
 
 .preview-section.hidden {
     display: none !important;
@@ -1068,9 +1105,12 @@ body {
     overflow: visible !important;
 }
 
-/* ===========================
-   LOADING INDICATOR
-   =========================== */
+/*
+====================================
+  LOADING INDICATOR
+  - Fullscreen loading overlay and spinner
+====================================
+*/
 
 .loading {
     position: fixed;
@@ -1107,9 +1147,12 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
+/*
+====================================
+  RESPONSIVE DESIGN
+  - Media queries for tablet, mobile, and accessibility
+====================================
+*/
 
 /* Tablet Styles */
 @media (max-width: 768px) {
@@ -1458,9 +1501,12 @@ body {
     }
 }
 
-/* ===========================
-   FRAME SELECTOR (YEAR FRAMES)
-   =========================== */
+/*
+====================================
+  FRAME SELECTOR (YEAR FRAMES)
+  - Frame selection controls and layout
+====================================
+*/
 .frame-selector {
     display: flex;
     justify-content: center;

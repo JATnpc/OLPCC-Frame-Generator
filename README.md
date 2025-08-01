@@ -1,57 +1,68 @@
-# OLPCC Frame Generator - Our Lady of the Pillar College–Cauayan
+# OLPCC Frame Generator
 
-A sophisticated photo frame generator designed for Our Lady of the Pillar College–Cauayan students and events. This web application allows users to upload photos and apply elegant frames with the school's branding.
+A modern, Greek-inspired photo frame generator for the Pillarican Sports Fest 2025. Easily upload your photo, preview it with a themed frame, and download your custom event image.
 
 ## Features
 
-- **Photo Upload**: Drag & drop or click to upload images
-- **Frame Application**: Apply the official OLPCC frame overlay
-- **Image Controls**: Scale and position photos within the frame
-- **Download**: Save framed photos for sharing
-- **Responsive Design**: Works on desktop and mobile devices
-- **Classical Greek Aesthetic**: Sophisticated design matching school events
+- Elegant Greek/Pillarican event branding
+- Drag-and-drop or click-to-upload photo area
+- Live preview with selectable frames
+- Responsive design for desktop and mobile
+- Downloadable framed images
 
-## Color Scheme
+## Demo
 
-- **Primary**: Deep Navy Blue (`#1e3a8a`, `#1e40af`)
-- **Background**: White with subtle patterns
-- **Accent**: Golden Yellow (`#fbbf24`)
-- **Typography**: Elegant serif fonts (Georgia, Times New Roman)
+Deploy this project instantly on [Vercel](https://vercel.com/) or view a live demo (if available).
 
-## Usage
+## Getting Started
 
-1. Upload your photo by clicking the upload area or dragging & dropping
-2. Adjust the scale and position using the sliders
-3. Preview your framed photo in real-time
-4. Download the final result
+### 1. Local Development
 
-## Technical Details
+1. **Clone the repository:**
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Canvas API**: For image processing and frame overlay
-- **File API**: For drag & drop functionality
-- **Responsive Design**: Mobile-first approach
+   ```sh
+   git clone https://github.com/JATnpc/OLPCC-Frame-Generator.git
+   cd OLPCC-Frame-Generator
+   ```
 
-## Development
+2. **Open `index.html` in your browser** to use the frame generator locally.
 
-Developed by: **JEREMI A. TAMAYO**
+### 2. Deploy to Vercel
 
-Project: OLPCC 2025-2026
+1. [Sign up for a free Vercel account](https://vercel.com/signup) if you don't have one.
+2. Click **"New Project"** and import this GitHub repository.
+3. Vercel will auto-detect this as a static site (no backend required).
+4. Click **"Deploy"**. Your site will be live in seconds.
 
-## Running the Application
+**No build step or server configuration is required.**
 
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. Or run a local server: `python -m http.server 8000`
-4. Navigate to `http://localhost:8000`
+## Project Structure
 
-## Browser Compatibility
+```
+OLPCC-Frame-Generator/
+├── index.html        # Main HTML file
+├── style.css         # Main stylesheet (Greek/Sports Fest theme)
+├── script.js         # Frame generator logic
+├── frame.png         # Default event frame image
+├── olpcc.png         # Event logo/branding
+├── README.md         # Project documentation
+```
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
+## Customization
+
+- To update the event frame, replace `frame.png` with your own PNG (transparent background recommended).
+- To update the logo, replace `olpcc.png`.
+- Edit `style.css` for advanced theming.
 
 ## License
 
-This project is developed for Our Lady of the Pillar College–Cauayan. 
+MIT License. See [LICENSE](LICENSE) for details.
+
+## Credits
+
+- Design & Development: [Your Name or Team]
+- Event: Pillarican Sports Fest 2025
+
+---
+
+*Proudly built for the OLPCC community. Ready for Vercel deployment.*
